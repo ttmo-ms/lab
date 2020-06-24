@@ -4,7 +4,7 @@ MAINTAINER Jover Zhang <joverzh@gmail.com>
 
 # pip
 ARG PIP_PACKAGES="tensorflow"
-ARG PIP_ARGS="-i https://mirrors.aliyun.com/pypi/simple"
+ARG PIP_ARGS
 RUN pip install $PIP_PACKAGES $PIP_ARGS
 
 # jupyter labextension

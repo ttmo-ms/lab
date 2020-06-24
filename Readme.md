@@ -10,6 +10,10 @@ If you use `docker`, you can build it with:
 ```shell script
 docker build -t ttmo/lab ./lab
 ```
+Or if you in Chinese Mainland, can change pip mirrors source.
+```shell script
+docker build -t ttmo/lab --build-arg PIP_ARGS="-i https://mirrors.aliyun.com/pypi/simple" ./lab
+```
 
 Then put following command in your terminal to use this image:
 ```shell script
