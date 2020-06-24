@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  lab:
+    build:
+      context: ./lab
+    command: ["--port", "8000"]
+    environment:
+      - PASSWORD=123456
+    ports:
+      - 8000:8000
