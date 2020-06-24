@@ -1,11 +1,14 @@
-version: '3'
+version: '3.8'
 
 services:
   lab:
     build:
       context: ./lab
+    image: ttmo/lab
     command: ["--port", "8000"]
     environment:
       - PASSWORD=123456
     ports:
       - 8000:8000
+    volumes:
+      - ./:/data
