@@ -8,7 +8,6 @@
 ### docker
 If you use `docker`, you can build it with:
 ```shell script
-cd lab
 docker build -t ttmo-ms/lab ./lab
 ```
 
