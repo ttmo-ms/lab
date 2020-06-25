@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  lab:
+    build:
+      context: ./lab
+      args:
+        - PIP_PACKAGES="tensorflow"
+        - PIP_ARGS="-i https://mirrors.aliyun.com/pypi/simple"
+        - LAB_EXTENSIONS="jupyterlab-drawio @jupyterlab/toc"
+    image: ttmo/lab
+    command: ["--port", "8000"]
+    environment:
+      - PASSWORD=123456
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/data

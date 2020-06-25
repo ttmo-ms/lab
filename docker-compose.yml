@@ -2,8 +2,6 @@ version: '3.8'
 
 services:
   lab:
-    build:
-      context: ./lab
     image: ttmo/lab
     command: ["--port", "8000"]
     environment:
